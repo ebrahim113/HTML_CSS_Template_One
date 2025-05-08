@@ -2,6 +2,9 @@
 :root {
     --main-color: #10cab7;
     --main-duration: .5s;
+    --paragraph-line-height: 1.8;
+    --section-padding: 60px;
+    --section-background-color: #f6f6f6;
 }
 
 /* End variables */
@@ -118,7 +121,7 @@ li {
     top: calc(100% + 15px);
     right: 0;
     z-index: 1;
-    background-color: #f6f6f6;
+    background-color: var(--section-background-color);
     list-style-type: none;
 }
 
@@ -171,7 +174,45 @@ li {
 
 .landing .container .text p {
     font-size: 19px;
-    line-height: 1.8;
+    line-height: var(--paragraph-line-height);
 }
 
 /* End landing section */
+
+/* Start features section */
+.features {
+    padding: var(--section-padding) 0;
+    background-color: var(--section-background-color);
+}
+
+.features .container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.features .container .feature {
+    padding: 20px;
+    text-align: center;
+}
+
+.features .container .feature i {
+    color: var(--main-color);
+}
+
+.features .container .feature .text {
+    text-transform: capitalize;
+}
+
+.features .container .feature .text h3 {
+    font-weight: 800;
+    margin: 30px 0;
+}
+
+.features .container .feature .text p {
+    line-height: var(--paragraph-line-height);
+    color: #777;
+    font-size: 17px;
+}
+
+/* End features section */
