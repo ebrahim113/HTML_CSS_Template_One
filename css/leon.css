@@ -40,6 +40,32 @@ li {
     padding: 0;
 }
 
+.container {
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+/* Small */
+@media (min-width: 768px) {
+    .container {
+        width: 750px;
+    }
+}
+
+/* Medium */
+@media (min-width: 992px) {
+    .container {
+        width: 970px;
+    }
+}
+
+/* Large */
+@media (min-width: 1200px) {
+    .container {
+        width: 1170px;
+    }
+}
+
 .special-heading {
     font-size: 100px;
     font-weight: 800;
@@ -68,31 +94,7 @@ li {
 }
 
 /* End global rules */
-.container {
-    padding: 0 15px;
-    margin: 0 auto;
-}
 
-/* Small */
-@media (min-width: 768px) {
-    .container {
-        width: 750px;
-    }
-}
-
-/* Medium */
-@media (min-width: 992px) {
-    .container {
-        width: 970px;
-    }
-}
-
-/* Large */
-@media (min-width: 1200px) {
-    .container {
-        width: 1170px;
-    }
-}
 
 /* Start header section */
 .header {
