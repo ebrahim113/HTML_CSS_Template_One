@@ -371,3 +371,104 @@ li {
 }
 
 /* End portfolio section */
+
+/* Start about section */
+.about {
+    padding: var(--section-padding) 0;
+}
+
+.about .container .about-content {
+    margin-top: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+@media (max-width: 767px) {
+    .about .container .about-content {
+        text-align: center;
+        flex-direction: column;
+    }
+}
+
+.about .container .about-content .image::before {
+    content: "";
+    width: 100px;
+    height: calc(100% + 80px);
+    background-color: #ebeced;
+    position: absolute;
+    top: -40px;
+    left: -20px;
+    z-index: -1;
+}
+
+@media (max-width: 767px) {
+    .about .container .about-content .image::before {
+        width: 70px;
+        height: 80%;
+    }
+}
+
+.about .container .about-content .image {
+    width: 250px;
+    height: 375px;
+    position: relative;
+}
+
+@media (max-width: 767px) {
+    .about .container .about-content .image {
+        width: 140px;
+    }
+}
+
+.about .container .about-content .image::after {
+    content: "";
+    width: 120px;
+    height: 300px;
+    position: absolute;
+    top: -40px;
+    right: -150px;
+    z-index: -1;
+    border-left: 80px solid var(--main-color);
+    border-bottom: 80px solid var(--main-color);
+}
+
+
+@media (max-width: 767px) {
+    .about .container .about-content .image::after {
+        width: 50px;
+        height: 160px;
+        right: -70px;
+        border-left-width: 60px;
+        border-bottom-width: 60px;
+    }
+}
+
+.about .container .about-content .image img {
+    max-width: 100%;
+}
+
+.about .container .about-content .text {
+    flex-basis: calc(100% - 500px);
+}
+
+.about .container .about-content .text p {
+    line-height: var(--paragraph-line-height);
+}
+
+.about .container .about-content .text p:first-of-type {
+    font-weight: bold;
+    margin-bottom: 50px;
+}
+
+.about .container .about-content .text hr {
+    display: inline-block;
+    width: 50%;
+    border-color: var(--main-color);
+}
+
+.about .container .about-content .text p:last-of-type {
+    color: var(--paragraph-color);
+}
+
+/* End about section */
