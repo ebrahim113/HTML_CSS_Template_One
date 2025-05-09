@@ -185,7 +185,7 @@ li {
 .landing {
     background-image: url('../images/landing.jpg');
     background-size: cover;
-    height: calc(100vh - 68.39px);
+    height: calc(100vh - 68px);
     position: relative;
 }
 
@@ -472,3 +472,56 @@ li {
 }
 
 /* End about section */
+
+/* Start contact section */
+.contact {
+    padding: var(--section-padding) 0;
+    background-color: var(--section-background-color);
+}
+
+.contact .container .contact-info {
+    padding: var(--section-padding) 0;
+    text-align: center;
+}
+
+.contact .container .contact-info p {
+    font-size: 35px;
+    font-weight: 800;
+    color: var(--secondary-color);
+    letter-spacing: -2px;
+    margin-bottom: 15px;
+}
+
+@media (max-width:767px) {
+    .contact .container .contact-info p {
+        font-size: 25px;
+    }
+}
+
+.contact .container .contact-info a {
+    display: block;
+    font-size: 35px;
+    font-weight: 800;
+    color: var(--main-color);
+    text-decoration: none;
+}
+
+@media (max-width: 767px) {
+    .contact .container .contact-info a {
+        font-size: 25px;
+    }
+}
+
+.contact .container .contact-info .social {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    font-size: 16px;
+}
+
+.contact .container .contact-info .social i {
+    margin-left: 10px;
+    color: var(--secondary-color);
+}
+
+/* End contact section */
