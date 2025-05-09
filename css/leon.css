@@ -21,6 +21,7 @@ html {
 }
 
 body {
+    position: relative;
     font-family: "Work Sans", sans-serif;
 }
 
@@ -96,6 +97,11 @@ li {
 /* Start header section */
 .header {
     padding: 20px;
+    position: sticky;
+    top: 0px;
+    z-index: 1;
+    background-color: white;
+    box-shadow: 0px 1px 10px 0px var(--main-color);
 }
 
 .header .container {
@@ -525,3 +531,40 @@ li {
 }
 
 /* End contact section */
+
+/* Start footer section */
+.footer {
+    font-size: 18px;
+    color: white;
+    text-align: center;
+    padding: calc(var(--section-padding) / 2) 0;
+    background-color: var(--secondary-color);
+}
+
+.footer span {
+    font-weight: bold;
+    color: var(--main-color);
+}
+
+/* End footer section */
+
+/* To top button */
+.to-top {
+    text-decoration: none;
+    position: fixed;
+    bottom: 50px;
+    right: 25px;
+    border: 15px solid var(--main-color);
+    border-color: transparent transparent var(--main-color);
+}
+
+.to-top::after {
+    content: "";
+    position: absolute;
+    bottom: 5px;
+    left: 50%;
+    width: 10px;
+    height: 20px;
+    transform: translate(-50%, 200%);
+    background-color: var(--main-color);
+}
