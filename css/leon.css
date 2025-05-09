@@ -314,7 +314,7 @@ li {
 @media (max-width: 767px) {
     .services .container .cols .col .image::before {
         height: 50px;
-        width: 80%;
+        width: 95%;
         top: auto;
         bottom: -18px;
         left: 50%;
@@ -338,3 +338,36 @@ li {
 }
 
 /* End services section */
+
+/* Start portfolio section */
+.portfolio {
+    padding: var(--section-padding) 0;
+    background-color: var(--section-background-color);
+}
+
+.portfolio .container .portfolio-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 80px;
+}
+
+.portfolio .container .portfolio-content .box {
+    background-color: white;
+}
+
+.portfolio .container .portfolio-content .box .image img {
+    max-width: 100%;
+}
+
+.portfolio .container .portfolio-content .box .text {
+    padding: 20px;
+}
+
+.portfolio .container .portfolio-content .box .text p {
+    color: var(--paragraph-color);
+    line-height: var(--paragraph-line-height);
+    margin-bottom: 0;
+}
+
+/* End portfolio section */
